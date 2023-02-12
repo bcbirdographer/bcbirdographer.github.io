@@ -6,6 +6,10 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 #taxonomy-tree li {
@@ -24,4 +28,11 @@ body {
 
 #taxonomy-tree li.open > ul {
   display: block;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
