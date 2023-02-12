@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
 #taxonomy-tree {
   list-style: none;
   padding: 0;
@@ -5,21 +9,19 @@
 }
 
 #taxonomy-tree li {
-  display: block;
-  position: relative;
-  float: left;
-  clear: both;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
 }
 
-#taxonomy-tree ul ul {
+#taxonomy-tree li.open {
+  background-color: #fff;
+}
+
+#taxonomy-tree ul {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
 }
 
-#taxonomy-tree li:hover > ul {
+#taxonomy-tree li.open > ul {
   display: block;
 }
