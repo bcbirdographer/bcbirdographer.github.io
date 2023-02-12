@@ -2,56 +2,45 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>BCBirdographer</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <h1>Bird Photo Repository</h1>
     <ul id="taxonomy-tree">
-      <div id="taxonomy-tree">
-        <img src="logo.png" alt="Logo" id="logo">
+      <li>
+        <img src="logo.png" alt="Logo">
         <ul>
-           <!-- ... -->
-        </ul>
-      </div>
-
-      <li>Birds
-        <ul>
-          <li>Passerines
+          <!-- Add your sub-nodes here -->
+          <!-- For example: -->
+          <li>
+            <div class="node">Aves</div>
             <ul>
-              <li>Sparrows
+              <li>
+                <div class="node">Passeriformes</div>
                 <ul>
-                  <li>House Sparrow</li>
-                  <li>Tree Sparrow</li>
+                  <li>
+                    <div class="node">Sparrows</div>
+                    <ul>
+                      <li>
+                        <div class="node">House Sparrow</div>
+                        <ul>
+                          <li><img src="house_sparrow_1.jpg" alt="House Sparrow"></li>
+                          <li><img src="house_sparrow_2.jpg" alt="House Sparrow"></li>
+                          <!-- Add more images of House Sparrows here -->
+                        </ul>
+                      </li>
+                      <!-- Add more bird species here -->
+                    </ul>
+                  </li>
+                  <!-- Add more bird orders here -->
                 </ul>
               </li>
-              <li>Finches
-                <ul>
-                  <li>European Goldfinch</li>
-                  <li>American Goldfinch</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Non-passerines
-            <ul>
-              <li>Owls
-                <ul>
-                  <li>Barn Owl</li>
-                  <li>Snowy Owl</li>
-                </ul>
-              </li>
-              <li>Hawks
-                <ul>
-                  <li>Red-tailed Hawk</li>
-                  <li>Harris's Hawk</li>
-                </ul>
-              </li>
+              <!-- Add more bird classes here -->
             </ul>
           </li>
         </ul>
       </li>
     </ul>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
