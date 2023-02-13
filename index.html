@@ -1,46 +1,51 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <ul id="taxonomy-tree">
-      <li>
-        <img src="logo.png" alt="Logo">
-        <ul>
-          <!-- Add your sub-nodes here -->
-          <!-- For example: -->
-          <li>
-            <div class="node">Aves</div>
-            <ul>
-              <li>
-                <div class="node">Passeriformes</div>
-                <ul>
-                  <li>
-                    <div class="node">Sparrows</div>
-                    <ul>
-                      <li>
-                        <div class="node">House Sparrow</div>
-                        <ul>
-                          <li><img src="house_sparrow_1.jpg" alt="House Sparrow"></li>
-                          <li><img src="house_sparrow_2.jpg" alt="House Sparrow"></li>
-                          <!-- Add more images of House Sparrows here -->
-                        </ul>
-                      </li>
-                      <!-- Add more bird species here -->
-                    </ul>
-                  </li>
-                  <!-- Add more bird orders here -->
-                </ul>
-              </li>
-              <!-- Add more bird classes here -->
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <script src="script.js"></script>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <div class="tree">
+      <ul>
+        <li class="node">
+          <a href="#">Class</a>
+          <ul>
+            <li class="node">
+              <a href="#">Order</a>
+              <ul>
+                <li class="node">
+                  <a href="#">Family</a>
+                  <ul>
+                    <li class="node">
+                      <a href="#">Genus</a>
+                      <ul>
+                        <li class="node">
+                          <a href="#">Species</a>
+                          <ul>
+                            <li class="node-img">
+                              <img src="bird1.jpg" alt="Bird 1">
+                            </li>
+                            <li class="node-img">
+                              <img src="bird2.jpg" alt="Bird 2">
+                            </li>
+                            <li class="node-img">
+                              <img src="bird3.jpg" alt="Bird 3">
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
