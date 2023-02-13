@@ -1,22 +1,17 @@
-// Get all nodes
+// Get all the tree diagram nodes
 const nodes = document.querySelectorAll(".node");
 
-// Add click event listeners to all nodes
-nodes.forEach((node) => {
-  node.addEventListener("click", (event) => {
-    // Get sub-nodes of the clicked node
-    const subNodes = node.nextElementSibling;
+// Add a click event listener to each node
+nodes.forEach(node => {
+  node.addEventListener("click", function() {
+    this.classList.toggle("active");
 
-    // If sub-nodes are visible, hide them
-    if (subNodes.style.display === "block") {
-      subNodes.style.display = "none";
+    // Get the next sibling of the node (the sub-nodes)
+    let subNodes = this.nextElementSibling;
+    
+    // If there are sub-nodes, toggle their visibility
+    if (subNodes) {
+      subNodes.classList.toggle("show");
     }
-    // If sub-nodes are hidden, show them
-    else {
-      subNodes.style.display = "block";
-    }
-
-    // Prevent the click event from propagating to parent nodes
-    event.stopPropagation();
   });
 });
