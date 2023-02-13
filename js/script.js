@@ -15,5 +15,8 @@ nodes.forEach((node) => {
     else {
       subNodes.style.display = "block";
     }
+
+    // Prevent the click event from propagating to parent nodes
+    event.stopPropagation();
   });
 });
