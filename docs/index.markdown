@@ -6,7 +6,7 @@ layout: default
   <ul>
     <li>
       <a href="#">
-        <img src="logo.png" alt="logo">
+        <img src="_data/logo.png" alt="logo">
       </a>
       <ul>
         <li>
