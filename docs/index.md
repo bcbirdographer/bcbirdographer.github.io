@@ -8,24 +8,17 @@ layout: default
             <ul id='frontEnd'>
                 <li><span class='caret'>Parent</span>
                     <ul class='nested'>
-                        <li>child</li>
-                        <li><span class='caret'>child</span>
+                        <li><span class='caret'>Child</span>
                             <ul class='nested'>
-                                <li>Grand Child</li>
-                                <li>Grand Child</li>
                                 <li><span class='caret'>Grand Child</span>
                                     <ul class='nested'>
                                         <li>Great Grand Child</li>
-                                        <li>Great Grand Child</li>
                                     </ul>
                                 </li>
-                                <li>Grand Child</li>
-                                <li>Grand Child</li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li>Parent</li>
             </ul>
         </div>
     </div>
