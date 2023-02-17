@@ -1,9 +1,9 @@
-const toggleNode = node => {
-  node.nextElementSibling.classList.toggle("expanded");
-};
+carets = document.getElementsByClassName('caret');
 
-const parentNode = document.querySelector("li");
-parentNode.addEventListener("click", () => toggleNode(parentNode));
-
-// Add the following code to set the initial state of the tree diagram
-document.querySelector("ul.child-nodes").style.display = "none";
+for (var i = 0; i < carets.length; i++) {
+    carets[i].addEventListener('click', function() {
+        this.classList.toggle('caret-down')
+        parent = this.parentElement;
+        parent.querySelector('.nested').classList.toggle('active')
+    })
+}
