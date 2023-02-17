@@ -6,7 +6,7 @@ layout: default
     <div class="row">
         <div class="col-md-4">
             <ul id='frontEnd'>
-                <li><span class='caret'>Parent</span>
+                <li><span class='caret'><img src="assets/css/logo.png" alt="Logo" class="parent-image"></span>
                     <ul class='nested'>
                         <li><span class='caret'>Child</span>
                             <ul class='nested'>
