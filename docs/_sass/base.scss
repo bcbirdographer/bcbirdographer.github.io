@@ -1,35 +1,9 @@
-#frontEnd .caret {
-    position: relative;
-    list-style-type: none;
-    font-size: 1em;
-    cursor: pointer;
+.caret {
+  list-style-type: none;
+  margin: auto;
 }
 
-#frontEnd .parent-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-#frontEnd .caret-down {
-    position: relative;
-}
-
-#frontEnd .caret:before {
-    content: '\25B8';
-    display: inline-block;
-    font-size: 17px;
-}
-
-#frontEnd .caret-down:before {
-    content: '\25B8';
-    display: inline-block;
-    font-size: 17px;
-    transform: rotate(90deg)
-}
-
-#frontEnd ul {
+ul {
     list-style-type: none;
     border-left: 1px solid black;
     padding: 0;
@@ -37,13 +11,13 @@
     padding-left: 35px;
 }
 
-#frontEnd ul li {
+ul li {
     position: relative;
     text-transform: capitalize;
     list-style-type: none;
 }
 
-#frontEnd ul li:before {
+ul li:before {
     content: '';
     list-style-type: none;
     position: absolute;
@@ -69,4 +43,20 @@ input {
 
 .fa {
     pointer-events: none;
+}
+
+.parent-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+}
+
+.group-image {
+  border-radius: 50%;
+  border: 2px solid black;
+  max-width: 10%;
+  height: auto;
 }

@@ -1,3 +1,5 @@
+/* tree diagram functionality */
+
 carets = document.getElementsByClassName('caret');
 
 for (var i = 0; i < carets.length; i++) {
