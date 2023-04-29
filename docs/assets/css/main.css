@@ -700,7 +700,7 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
+			.image.main object {
 				width: 100%;
 			}
 
