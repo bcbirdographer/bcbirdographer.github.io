@@ -398,29 +398,4 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
-// Set up the API key and user ID
-const api_key = 'd2b811f1aed4810a90a7dfb31159d11f';
-const user_id = '198206199@N07';
-
-// Get a list of photos from the Flickr API
-fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${api_key}&user_id=${user_id}&format=json&nojsoncallback=1`)
-  .then(response => response.json())
-  .then(data => {
-    // Select a random photo from the list
-    const photos = data.photos.photo;
-    const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
-
-    // Build the URL for the photo
-    const photoUrl = `https://farm${randomPhoto.farm}.staticflickr.com/${randomPhoto.server}/${randomPhoto.id}_${randomPhoto.secret}.jpg`;
-
-  // Set the photo URL as the src attribute of an HTML img element
-    const img = document.getElementById('random-photo-container');
-    img.src = photoUrl;
-    img.alt = 'Random Flickr Photo';
-  })
-
-  .catch(error => {
-    console.error('Error fetching photos:', error);
-  });
-
 })(jQuery);
