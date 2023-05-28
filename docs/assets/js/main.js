@@ -417,10 +417,10 @@ fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPhotos&api_
     const imgHtml = `<img src="${photoUrl}" alt="Random Flickr Photo">`;
 
     // Insert the image into the specified HTML element
-    const photoContainer = document.getElementById('photo-container');
+    const photoContainer = document.getElementById('random-photo-container');
     photoContainer.innerHTML = imgHtml;
   })
-  
+
   .catch(error => {
     console.error('Error fetching photos:', error);
   });
