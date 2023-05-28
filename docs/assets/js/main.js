@@ -413,11 +413,14 @@ fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPhotos&api_
     // Build the URL for the photo
     const photoUrl = `https://farm${randomPhoto.farm}.staticflickr.com/${randomPhoto.server}/${randomPhoto.id}_${randomPhoto.secret}.jpg`;
 
-    // Display the photo on your website (using whatever method you prefer)
-    const img = document.createElement('img');
-    img.src = photoUrl;
-    document.body.appendChild(img);
+     // Generate HTML markup for the image
+    const imgHtml = `<img src="${photoUrl}" alt="Random Flickr Photo">`;
+
+    // Insert the image into the specified HTML element
+    const photoContainer = document.getElementById('photo-container');
+    photoContainer.innerHTML = imgHtml;
   })
+  
   .catch(error => {
     console.error('Error fetching photos:', error);
   });
