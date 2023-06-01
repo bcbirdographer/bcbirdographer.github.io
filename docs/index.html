@@ -29,35 +29,35 @@
       // Set up the API key and user ID
       const api_key = 'd2b811f1aed4810a90a7dfb31159d11f';
       const user_id = '198206199@N07';
-
+      
 // Get a list of photos from the Flickr API
-	fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${api_key}&user_id=${user_id}&format=json&nojsoncallback=1`)
-  	.then(response => response.json())
-  	.then(data => {
-    	// Select a random photo from the list
-    	const photos = data.photos.photo;
-    	const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+fetch(`https://www.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=${api_key}&user_id=${user_id}&format=json&nojsoncallback=1`)
+  .then(response => response.json())
+  .then(data => {
+    // Select a random photo from the list
+    const photos = data.photos.photo;
+    const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
 
-    	// Fetch the available sizes for the selected photo
-    	return fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=${api_key}&photo_id=${randomPhoto.id}&format=json&nojsoncallback=1`);
-  	})
-  	.then(response => response.json())
-  	.then(data => {
-    	// Find the highest quality version (original size) of the photo
-    	const sizes = data.sizes.size;
-    	const highestSize = sizes.find(size => size.label === 'Original');
+    // Fetch the available sizes for the selected photo
+    return fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=${api_key}&photo_id=${randomPhoto.id}&format=json&nojsoncallback=1`);
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Find the highest quality version (original size) of the photo
+    const sizes = data.sizes.size;
+    const highestSize = sizes.find(size => size.label === 'Original');
 
-    	// Build the URL for the highest quality version of the photo
-    	const photoUrl = highestSize.source;
+    // Build the URL for the highest quality version of the photo
+    const photoUrl = highestSize.source;
 
-    	// Set the photo URL as the src attribute of an HTML img element
-    	const img = document.getElementById('photo-img');
-    	img.src = photoUrl;
-    	img.alt = 'Random Flickr Photo';
-  	})
-  	.catch(error => {
-    	console.error('Error fetching photos:', error);
-  	});
+    // Set the photo URL as the src attribute of an HTML img element
+    const img = document.getElementById('photo-img');
+    img.src = photoUrl;
+    img.alt = 'Random Flickr Photo';
+  })
+  .catch(error => {
+    console.error('Error fetching photos:', error);
+  });
   </script>
 								</div>
 							</div>
