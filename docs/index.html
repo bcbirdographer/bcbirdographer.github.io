@@ -66,6 +66,9 @@
         const img = document.getElementById('photo-img');
         img.src = photoUrl;
         img.alt = 'Random Flickr Photo';
+
+        //Update CSS Variable value
+        document.documentElement.style.setProperty('--background-image', `url(${photoUrl})`);
       })
       .catch(error => {
         console.error('Error fetching photos:', error);
