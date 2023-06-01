@@ -1627,14 +1627,6 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-#photo-container {
-	max-width: 100%;
-}
-
-#photo-img {
-	max-width: 100;
-	height: auto;
-}
 
 .logowhite {
 	width: 20%;
