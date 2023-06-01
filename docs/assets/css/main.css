@@ -1627,9 +1627,13 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-.randomimg {
-	width: 70%;
-	height: 70%;
+#photo-container {
+	max-width: 100%;
+}
+
+#photo-img {
+	max-width: 100;
+	height: auto;
 }
 
 .logowhite {
