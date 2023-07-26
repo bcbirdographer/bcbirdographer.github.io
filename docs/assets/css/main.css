@@ -75,6 +75,7 @@ input, select, textarea {
 /* Gallery */
 div.gallery {
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 div.gallery:hover {
