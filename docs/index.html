@@ -86,7 +86,7 @@
 						<!-- North America -->
 							<article id="northamerica">
 								<h2 class="major">North America</h2>
-								<button class="Btn" onclick="window.location.href='https://bcbirdographer.github.io/#northamerica';">
+								<button class="Btn" id="refresh-button">
   									<div class="sign">⟳</div>
 										<div class="text">Refresh</div>
 								</button>
@@ -159,6 +159,12 @@ function shuffleArray(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
+
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+  // Call the location.reload() method to refresh the page
+  location.reload();
+});
 
 </script>
 
