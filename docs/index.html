@@ -30,6 +30,10 @@
 								<li><a href="#southamerica">South America</a></li>
 								<li><a href="#europe">Europe</a></li>
 								<li><a href="#asia">Asia</a></li>
+								<li><button class="Btn" id="refresh-button">
+  									<div class="sign">⟳</div>
+										<div class="text">Refresh</div>
+								</button>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -75,6 +79,13 @@
         console.error('Error fetching photos:', error);
       });
   });
+
+  const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => {
+  // Call the location.reload() method to refresh the page
+  location.reload();
+});
+
 </script>
 					</div>
 
