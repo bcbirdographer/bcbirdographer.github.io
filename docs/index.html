@@ -122,15 +122,11 @@
               const photoTitle = photo.title;
 
               galleryHTML += `
-                <div class="gallery-item">
-                	<div class="responsive">
-  						<div class="gallery">
-    						<a target="_blank" href="${photoUrl}">
-      							<img src="${photoUrl}" alt="${photoTitle}">
-                  					<div class="title">${photoTitle}</div>
-    						</a>
-    					</div>
-  					</div>
+  				<div class="gallery">
+    				<a target="_blank" href="${photoUrl}">
+      					<img src="${photoUrl}" alt="${photoTitle}">
+                  			<div class="title">${photoTitle}</div>
+    				</a>
 				</div>
               `;
             }
