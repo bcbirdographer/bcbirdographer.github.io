@@ -157,6 +157,14 @@ function shuffleArray(array) {
     [array[i], array[j]] = [array[j], array[i]];
   }
 }
+
+// Function to get the URL of a larger size of the photo
+function getPhotoUrl(photo) {
+  // Modify the size label to get a larger image
+  // For example, "_b" suffix represents a large size
+  return `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
+}
+
 </script>
 <div class="clearfix"></div>
 
