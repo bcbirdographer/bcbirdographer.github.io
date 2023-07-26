@@ -113,7 +113,7 @@ div.gallery img {
   content: "";
   display: table;
   clear: both;
-}
+}	
 
 /* Basic */
 
@@ -1552,7 +1552,7 @@ div.gallery img {
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-			padding: 2.5rem 1.5rem 0.5rem 1.5rem ;
+			padding: 1rem ;
 			position: relative;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
@@ -1611,7 +1611,7 @@ div.gallery img {
 		@media screen and (max-width: 736px) {
 
 			#main article {
-				padding: 3.5rem 2rem 0.5rem 2rem ;
+				padding: 1rem ;
 			}
 
 				#main article .close:before {
@@ -1627,7 +1627,7 @@ div.gallery img {
 		@media screen and (max-width: 480px) {
 
 			#main article {
-				padding: 3rem 1.5rem 0.5rem 1.5rem ;
+				padding: 1rem ;
 			}
 
 		}
