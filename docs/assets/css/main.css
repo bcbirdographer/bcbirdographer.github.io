@@ -76,9 +76,9 @@ input, select, textarea {
 div.gallery {
   border: 1px solid #ccc;
   width: 100%;
-  /*display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;*/
+  grid-gap: 1rem;
 }
 
 div.gallery:hover {
@@ -88,6 +88,20 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    /* For smaller screens, display the images in two columns */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    /* For mobile screens, display the images in a single column */
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Basic */
