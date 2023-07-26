@@ -76,9 +76,9 @@ input, select, textarea {
 div.gallery {
   border: 1px solid #ccc;
   width: 100%;
-  display: grid;
+  /*display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1rem;*/
 }
 
 div.gallery:hover {
