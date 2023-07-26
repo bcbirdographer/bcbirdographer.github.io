@@ -86,11 +86,6 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -118,6 +113,19 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+/* New CSS rules for larger images on desktop */
+@media only screen and (min-width: 701px) {
+  .gallery-item {
+    width: 20%; /* Adjust this percentage to control the image size */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .gallery-item {
+    width: 15%; /* Adjust this percentage to control the image size */
+  }
 }
 
 /* Basic */
