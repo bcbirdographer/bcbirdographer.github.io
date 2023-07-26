@@ -118,13 +118,13 @@ div.gallery img {
 /* New CSS rules for larger images on desktop */
 @media only screen and (min-width: 701px) {
   .gallery-item {
-    width: 20%; /* Adjust this percentage to control the image size */
+    width: 50%; /* Adjust this percentage to control the image size */
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .gallery-item {
-    width: 15%; /* Adjust this percentage to control the image size */
+    width: 50%; /* Adjust this percentage to control the image size */
   }
 }
 
